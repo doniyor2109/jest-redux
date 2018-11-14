@@ -1,0 +1,26 @@
+{
+  "name": "jest-redux",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "typings": "typings.d.ts",
+  "scripts": {
+    "build": "babel lib -d dist"
+  },
+  "dependencies": {
+    "fn-args": "^3.0.0",
+    "jest-snapshot": "^23.6.0"
+  },
+  "peerDependencies": {
+    "jest": "^23.6.0"
+  },
+  "private": false,
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/preset-env": "^7.1.6"
+  }
+}
