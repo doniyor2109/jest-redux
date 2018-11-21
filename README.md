@@ -54,7 +54,7 @@ Then add this config
 
 Checks reducer to handle given actionCreators.
 
-#### E.g
+#### Example
 
 ```js
 expect(reducer).toHandleActions(actions);
@@ -64,7 +64,7 @@ expect(reducer).toHandleActions(actions);
 
 Checks reducer against given intitialState.
 
-#### E.g
+#### Example
 
 ```js
 expect(reducer).toHaveInitialState(initialState);
@@ -74,7 +74,7 @@ expect(reducer).toHaveInitialState(initialState);
 
 Checks given action creators to match with previous snapshot.
 
-#### E.g
+#### Example
 
 ```js
 expect(actionCreators).toMatchActionCreatorsSnapshot();
