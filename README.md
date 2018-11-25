@@ -53,7 +53,7 @@ Then add this config
 
 # API Reference
 
-## `toHandleActions(reducer, actionCreators)`
+### `toHandleActions(reducer, actionCreators)`
 
 Checks reducer to handle given actionCreators.
 
@@ -63,7 +63,7 @@ Checks reducer to handle given actionCreators.
 expect(reducer).toHandleActions(actions);
 ```
 
-## `toHaveInitialState(reducer, initialState)`
+### `toHaveInitialState(reducer, initialState)`
 
 Checks reducer against given intitialState.
 
@@ -73,7 +73,7 @@ Checks reducer against given intitialState.
 expect(reducer).toHaveInitialState(initialState);
 ```
 
-## `toMatchActionCreatorsSnapshot(actionCreators)`
+### `toMatchActionCreatorsSnapshot(actionCreators)`
 
 Checks given action creators to match with previous snapshot.
 
