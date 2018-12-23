@@ -22,5 +22,6 @@
     "@babel/core": "^7.1.6",
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
     "@babel/preset-env": "^7.1.6"
-  }
+  },
+  "keywords": ["redux", "jest", "actions", "reducer", "testing"]
 }
