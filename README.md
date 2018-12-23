@@ -5,6 +5,8 @@
 
 Jest matchers for testing redux easier and more declaritive.
 
+# Table of Contents
+
  - [Getting start](#getting-start)
     - [Installation](#installation)
     - [Setup](#setup)
