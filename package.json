@@ -1,6 +1,6 @@
 {
   "name": "jest-redux",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "typings": "typings.d.ts",
   "scripts": {
@@ -23,5 +23,11 @@
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
     "@babel/preset-env": "^7.1.6"
   },
-  "keywords": ["redux", "jest", "actions", "reducer", "testing"]
+  "keywords": [
+    "redux",
+    "jest",
+    "actions",
+    "reducer",
+    "testing"
+  ]
 }
