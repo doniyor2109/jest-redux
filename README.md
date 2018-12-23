@@ -10,6 +10,7 @@ Jest matchers for testing redux easier and more declaritive.
  - [Getting start](#getting-start)
     - [Installation](#installation)
     - [Setup](#setup)
+    - [Usage](#usage)
  - [API Reference](#api-reference)
     - [toHandleActions(reducer, actionCreators)](#tohandleactionsreducer-actioncreators)
     - [toHaveInitialState(reducer, initialState)](#tohaveinitialstatereducer-initialstate)
@@ -62,6 +63,27 @@ Then add this config
 "jest": {
   "setupTestFrameworkScriptFile": "./setupTest.js"
 }
+```
+
+## Usage
+
+Test your standart redux actions and reducers with one of the `jest-redux` matchers.
+
+```js
+
+const initialState = { number: 0 };
+
+function reducer(state = initialState, action) {
+ switch(action.type) {
+   case "ADD":
+    return state.number + action.payload;
+   default:
+     return state;
+ }
+}
+
+
+expect(reducer).toHaveInitialState(initialState); // Passes tests
 ```
 
 # API Reference
