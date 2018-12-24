@@ -1,9 +1,9 @@
 # jest-redux
 
+Jest matchers for testing redux easier and more declaritive.
+
 [![Build Status](https://travis-ci.com/doniyor2109/jest-redux.svg?branch=master)](https://travis-ci.com/doniyor2109/jest-redux)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/doniyor2109/jest-redux/blob/master/LICENSE) [![Greenkeeper badge](https://badges.greenkeeper.io/doniyor2109/jest-redux.svg)](https://greenkeeper.io/)
-
-Jest matchers for testing redux easier and more declaritive.
 
 # Table of Contents
 
