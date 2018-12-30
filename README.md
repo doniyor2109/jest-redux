@@ -12,9 +12,9 @@ Jest matchers for testing redux easier and more declaritive.
     - [Setup](#setup)
     - [Usage](#usage)
  - [API Reference](#api-reference)
-    - [toHandleActions(reducer, actionCreators)](#tohandleactionsreducer-actioncreators)
+    - [toHandleActions(reducer, actions)](#tohandleactionsreducer-actions)
     - [toHaveInitialState(reducer, initialState)](#tohaveinitialstatereducer-initialstate)
-    - [toMatchActionSnapshot(actionCreators)](#tomatchactionsnapshotactioncreators)
+    - [toMatchActionSnapshot(actions)](#tomatchactionsnapshotactions)
  - [License](#license)
 
 # Getting start
