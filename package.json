@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "typings": "typings.d.ts",
   "scripts": {
+    "prepublish": "npm run build",
     "test": "jest",
     "build": "babel lib -d dist"
   },
