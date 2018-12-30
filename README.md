@@ -104,25 +104,7 @@ expect(reducer).toHandleActions(readyActions); // Passes tests
 
 Checks reducer to handle given action creators. Compares snpashots of returned reducer result for given actions.
 
-Passed actions should not expect arguments as following:
-
-```js
-const actions = {
- increment: () => ({ type: "INC", payload: 1 })
-};
-```
-
-If you have actions that receives arguments you can wrap them into function and pass to `toMatchActionSnapshot`.
-
-```js
-
-const add = (number) => ({ type: "ADD", payload: number });
-
-const actions = {
- add: () => add(1)
-};
-```
-
+> Passed actions should not expect arguments
 
 #### Example
 
@@ -132,7 +114,7 @@ expect(reducer).toHandleActions(actions);
 
 ### `toHaveInitialState(reducer, initialState)`
 
-Checks reducer against given intitialState.
+Checks reducer against given initialState.
 
 #### Example
 
@@ -144,29 +126,12 @@ expect(reducer).toHaveInitialState(initialState);
 
 Checks given action creators to match with previous snapshot. 
 
-Passed actions should not expect arguments as following:
-
-```js
-const actions = {
- increment: () => ({ type: "INC", payload: 1 })
-};
-```
-
-If you have actions that receives arguments you can wrap them into function and pass to `toMatchActionSnapshot`.
-
-```js
-
-const add = (number) => ({ type: "ADD", payload: number });
-
-const actions = {
- add: () => add(1)
-};
-```
+> Passed actions should not expect arguments
 
 #### Example
 
 ```js
-expect(actionCreators).toMatchActionSnapshot();
+expect(actions).toMatchActionSnapshot();
 ```
 
 # License
