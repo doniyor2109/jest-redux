@@ -14,7 +14,7 @@ Jest matchers for testing redux easier and more declaritive.
  - [API Reference](#api-reference)
     - [toHandleActions(reducer, actionCreators)](#tohandleactionsreducer-actioncreators)
     - [toHaveInitialState(reducer, initialState)](#tohaveinitialstatereducer-initialstate)
-    - [toMatchActionCreatorsSnapshot(actionCreators)](#tomatchactioncreatorssnapshotactioncreators)
+    - [toMatchActionSnapshot(actionCreators)](#tomatchactioncreatorssnapshotactioncreators)
  - [License](#license)
 
 # Getting start
@@ -117,14 +117,14 @@ Checks reducer against given intitialState.
 expect(reducer).toHaveInitialState(initialState);
 ```
 
-### `toMatchActionCreatorsSnapshot(actionCreators)`
+### `toMatchActionSnapshot(actionCreators)`
 
 Checks given action creators to match with previous snapshot.
 
 #### Example
 
 ```js
-expect(actionCreators).toMatchActionCreatorsSnapshot();
+expect(actionCreators).toMatchActionSnapshot();
 ```
 
 # License

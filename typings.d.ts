@@ -2,7 +2,7 @@
 
 declare namespace jest {
 	interface Matchers {
-        toMatchActionCreators: () => void
+        toMatchActionSnapshot: () => void
         toHandleActions: (actions: any) => void
         toHaveInitialState: (initialState: any) => void
 	}

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toHaveInitialState should have correct initial state: add should match with snapshot 1`] = `
+Object {
+  "payload": 1,
+  "type": "ADD",
+}
+`;
+
+exports[`toHaveInitialState should have correct initial state: remove should match with snapshot 1`] = `
+Object {
+  "payload": 1,
+  "type": "REMOVE",
+}
+`;

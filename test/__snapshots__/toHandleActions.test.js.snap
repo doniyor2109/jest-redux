@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toHandleActions should match with previous results: add should match with snapshot 1`] = `1`;
+
+exports[`toHandleActions should match with previous results: remove should match with snapshot 1`] = `-1`;
