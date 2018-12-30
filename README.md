@@ -14,7 +14,7 @@ Jest matchers for testing redux easier and more declaritive.
  - [API Reference](#api-reference)
     - [toHandleActions(reducer, actionCreators)](#tohandleactionsreducer-actioncreators)
     - [toHaveInitialState(reducer, initialState)](#tohaveinitialstatereducer-initialstate)
-    - [toMatchActionSnapshot(actionCreators)](#tomatchactioncreatorssnapshotactioncreators)
+    - [toMatchActionSnapshot(actionCreators)](#tomatchactionsnapshotactioncreators)
  - [License](#license)
 
 # Getting start
@@ -84,22 +84,45 @@ function reducer(state = initialState, action) {
  }
 }
 
-const actionCreators = {
- add: (number) => ({ type: "ADD", payload: number }),
- remove: (number) => ({ type: "REMOVE", payload: number }),
-};
+const add = (number) => ({ type: "ADD", payload: number });
+const remove = (number) => ({ type: "REMOVE", payload: number });
 
 
 expect(reducer).toHaveInitialState(initialState); // Passes tests
 
-expect(reducer).toHandleActions(actions); // Passes tests
+const readyActions = {
+  add: () => add(1),
+  remove: () => remove(1),
+};
+
+expect(reducer).toHandleActions(readyActions); // Passes tests
 ```
 
 # API Reference
 
-### `toHandleActions(reducer, actionCreators)`
+### `toHandleActions(reducer, actions)`
 
 Checks reducer to handle given action creators. Compares snpashots of returned reducer result for given actions.
+
+Passed actions should not expect arguments as following:
+
+```js
+const actions = {
+ increment: () => ({ type: "INC", payload: 1 })
+};
+```
+
+If you have actions that receives arguments you can wrap them into function and pass to `toMatchActionSnapshot`.
+
+```js
+
+const add = (number) => ({ type: "ADD", payload: number });
+
+const actions = {
+ add: () => add(1)
+};
+```
+
 
 #### Example
 
@@ -117,9 +140,28 @@ Checks reducer against given intitialState.
 expect(reducer).toHaveInitialState(initialState);
 ```
 
-### `toMatchActionSnapshot(actionCreators)`
+### `toMatchActionSnapshot(actions)`
 
-Checks given action creators to match with previous snapshot.
+Checks given action creators to match with previous snapshot. 
+
+Passed actions should not expect arguments as following:
+
+```js
+const actions = {
+ increment: () => ({ type: "INC", payload: 1 })
+};
+```
+
+If you have actions that receives arguments you can wrap them into function and pass to `toMatchActionSnapshot`.
+
+```js
+
+const add = (number) => ({ type: "ADD", payload: number });
+
+const actions = {
+ add: () => add(1)
+};
+```
 
 #### Example
 
