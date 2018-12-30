@@ -77,20 +77,29 @@ function reducer(state = initialState, action) {
  switch(action.type) {
    case "ADD":
     return state.number + action.payload;
+   case "REMOVE":
+    return state.number + action.payload;
    default:
      return state;
  }
 }
 
+const actionCreators = {
+ add: (number) => ({ type: "ADD", payload: number }),
+ remove: (number) => ({ type: "REMOVE", payload: number }),
+};
+
 
 expect(reducer).toHaveInitialState(initialState); // Passes tests
+
+expect(reducer).toHandleActions(actions); // Passes tests
 ```
 
 # API Reference
 
 ### `toHandleActions(reducer, actionCreators)`
 
-Checks reducer to handle given actionCreators.
+Checks reducer to handle given action creators. Compares snpashots of returned reducer result for given actions.
 
 #### Example
 
