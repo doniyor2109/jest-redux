@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
-    "jest-snapshot": "^23.6.0"
+    "jest-snapshot": "^24.1.0"
   },
   "peerDependencies": {
     "jest": "^23.6.0"
